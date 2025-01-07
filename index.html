@@ -1,0 +1,1104 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+   </body>
+</html><element id="a6da4dce-d802-49cb-9b31-a9854f09f2d8" data-section-id="a6da4dce-d802-49cb-9b31-a9854f09f2d8">
+
+<div id="root">
+  <nav id="navbar" class="bg-neutral-900 text-white fixed w-full z-50 element-highlight">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-r3qnvviy">
+      <div class="flex justify-between h-16 items-center" id="el-30x7ayko">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center" id="el-pj161ulb">
+          <img class="h-8 w-auto transition-opacity duration-300 opacity-100" src="https://dms.mydukaan.io/original/webp/media/dd3b40b1-db23-400d-ae38-bb702bad6fc4.svg" alt="Logo" loading="lazy" id="el-nl3yz36r">
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block" id="el-z7f6eof7">
+  <div class="ml-10 flex items-center space-x-8">
+    <a href="#features" class="text-white hover:text-purple-400 px-3 py-2 text-sm font-medium scroll-smooth">Features</a>
+    <a href="#solutions" class="text-white hover:text-purple-400 px-3 py-2 text-sm font-medium scroll-smooth">Solutions</a>
+    <a href="#pricing" class="text-white hover:text-purple-400 px-3 py-2 text-sm font-medium scroll-smooth">Pricing</a>
+    <a href="#resources" class="text-white hover:text-purple-400 px-3 py-2 text-sm font-medium scroll-smooth">Resources</a>
+    <a href="/get-started" class="bg-[#5B53FD] hover:bg-[#4A43E8] px-4 py-2 rounded-lg text-sm font-medium text-white">Get Started</a>
+  </div>
+</div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden" id="el-33v59f6n">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-800">
+            <svg class="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24" id="el-wb01oh6p">
+              <path class="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="el-lrdydr66"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="el-173n3fuk">
+        <a href="#" class="block px-3 py-2 text-base font-medium text-white hover:bg-neutral-800" id="el-daywhe87">Features</a>
+        <a href="#" class="block px-3 py-2 text-base font-medium text-white hover:bg-neutral-800" id="el-yxqneslz">Solutions</a>
+        <a href="#" class="block px-3 py-2 text-base font-medium text-white hover:bg-neutral-800" id="el-l7m7u6s7">Pricing</a>
+        <a href="#" class="block px-3 py-2 text-base font-medium text-white hover:bg-neutral-800" id="el-8risvcyw">Resources</a>
+        <button class="w-full text-left bg-[#5B53FD] hover:bg-[#4A43E8] px-3 py-2 rounded-lg text-base font-medium text-white" id="el-8woev2f8">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+      
+      // Animate menu icon
+      const menuIcon = document.querySelector('.mobile-menu-icon');
+      menuIcon.classList.toggle('rotate-45');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      
+      if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</div></element><element id="99cdb510-af71-44a1-8d5d-5c71864948f7" data-section-id="99cdb510-af71-44a1-8d5d-5c71864948f7">
+
+<section id="hero" class="bg-neutral-900 text-white pt-24 pb-16 min-h-[70vh] element-highlight">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-1uvbputz">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="el-6nlqlhur">
+      <!-- Left Column: Content -->
+      <div class="animate__animated animate__fadeInLeft" id="el-1y6408br">
+  <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+    <span class="text-purple-500" style="color: #5B53FD;">Connect Akounto</span> with QuickBooks
+  </h1>
+  <p class="text-lg md:text-xl text-gray-300 mb-8">
+    Unlock effortless accounting by integrating Akounto with QuickBooks. Enjoy streamlined workflows, automated document processing, real-time tracking, and intelligent financial insights.
+  </p>
+  
+  <div class="mt-8 flex items-center gap-4">
+    <div class="flex -space-x-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path>
+      </svg>
+    </div>
+    <p class="text-gray-300">Trusted by 10,000+ businesses worldwide</p>
+  </div>
+</div>
+
+      <!-- Right Column: Image -->
+      <div class="relative animate__animated animate__fadeInRight" id="el-bp1y1u28">
+        <div class="relative z-10" id="el-bqbq5ong">
+          <img src="https://www.tradifyhq.com/hs-fs/hubfs/Global%20Hero%20Frame%20extended.webp" alt="Dashboard Preview" class="w-full rounded-xl shadow-2xl transition-opacity duration-300 opacity-100" loading="lazy" id="el-kl3v0f5w">
+        </div>
+        <div class="absolute inset-0 bg-purple-500/20 blur-3xl -z-10 rounded-full" id="el-58x34kb1"></div>
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-neutral-700 pt-8 element-highlight" id="el-g09nwipi">
+      <div class="text-center" id="el-o9b3qemd">
+        <h4 class="text-3xl font-bold text-[#5B53FD]" id="el-bvbtjml0">98%</h4>
+        <p class="text-gray-400" id="el-9lpxhvid">Processing Accuracy</p>
+      </div>
+      <div class="text-center" id="el-sad2qn1t">
+        <h4 class="text-3xl font-bold text-[#5B53FD]" id="el-efwc4u0c">2M+</h4>
+        <p class="text-gray-400" id="el-wwzddkj5">Documents Processed</p>
+      </div>
+      <div class="text-center" id="el-st6kxgzb">
+        <h4 class="text-3xl font-bold text-[#5B53FD]" id="el-hxhelagz">50k+</h4>
+        <p class="text-gray-400" id="el-1511bhz0">Active Users</p>
+      </div>
+      <div class="text-center" id="el-a5o1k1mt">
+        <h4 class="text-3xl font-bold text-[#5B53FD]" id="el-0k5ris1k">4.9/5</h4>
+        <p class="text-gray-400" id="el-greduqnx">Customer Rating</p>
+      </div>
+    </div>
+  </div>
+</section></element><element id="db582982-5212-4e05-83af-c8829d065449" data-section-id="db582982-5212-4e05-83af-c8829d065449">
+
+<section id="features" class="py-20 bg-white element-highlight">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-2y5jkya8">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Powerful Features for Your Financial Success</h2>
+      <p class="text-lg text-neutral-600 max-w-2xl mx-auto">Streamline your financial operations with our comprehensive suite of tools designed for modern businesses.</p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- No Setup Costs -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H6v-2h6v2zm4-4H6v-2h10v2zm0-4H6V7h10v2z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">No Setup Costs</h3>
+        <p class="text-neutral-600">Connect your QuickBooks and Akounto accounts for free! Stop logging in to multiple systems — run your whole business with Akounto.</p>
+      </div>
+
+      <!-- Available on any device -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">Available on Any Device</h3>
+        <p class="text-neutral-600">Access your accounts through the Akounto app — available on desktop, tablet, iPhone, and Android.</p>
+      </div>
+
+      <!-- Plug & Play -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M16 7v-4h-2v4h-4v-4h-2v4h-4v2h4v4h-4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4h4v-2h-4zm-6 6v-4h4v4h-4z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">Plug &amp; Play</h3>
+        <p class="text-neutral-600">Get an instant, real-time view of your finances within each app.</p>
+      </div>
+
+      <!-- Stay Safe & Secure -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">Stay Safe &amp; Secure</h3>
+        <p class="text-neutral-600">Akounto uses state-of-the-art fraud protection and security to keep your financial information safe and secure.</p>
+      </div>
+
+      <!-- Automatically Share Information -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">Automatically Share Information</h3>
+        <p class="text-neutral-600">Invoices, bills, payments, suppliers, and customer information are shared with QuickBooks automatically.</p>
+      </div>
+
+      <!-- Record Payments -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">Record Payments in Akounto</h3>
+        <p class="text-neutral-600">Payments will be automatically recorded in Akounto and moved to 'paid' for you.</p>
+      </div>
+
+      <!-- Manage Suppliers & Customers -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.7s;">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">Manage Suppliers &amp; Customers</h3>
+        <p class="text-neutral-600">Any changes you make to customer information in Akounto will automatically update in QuickBooks.</p>
+      </div>
+
+      <!-- Access Cash Flow -->
+      <div class="bg-neutral-50 p-6 rounded-xl hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-[#5B53FD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-4">Access Cash Flow in Real-time</h3>
+        <p class="text-neutral-600">Access your bills, payments, and invoices in QuickBooks for an accurate financial snapshot.</p>
+      </div>
+    </div>
+  </div>
+</section></element><element id="6dd1f76c-628d-4508-badb-8d14c9d2d9fd" data-section-id="6dd1f76c-628d-4508-badb-8d14c9d2d9fd">
+
+<section id="statistics" class="py-20 bg-neutral-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-lamaxoq0">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-bpx7ta6k">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4" id="el-j5vjo6a8">Real-Time Performance Metrics</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto" id="el-m9a4icm4">Track your business performance with detailed analytics and insights</p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 element-highlight" id="el-ze34jyr8">
+      <!-- Document Processing -->
+      <div class="bg-neutral-800 p-6 rounded-xl transition-all duration-300 animate__animated animate__fadeInUp transform hover:scale-105">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 bg-[#5B53FD]/20 rounded-lg flex items-center justify-center">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/estimates.svg" alt="Documents" class="w-6 h-6 transition-opacity duration-300 opacity-100 [filter:invert(1)]" loading="lazy">
+          </div>
+          <span class="text-[#5B53FD] text-sm">Last 24h</span>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Document Processing</h4>
+        <div class="flex items-end gap-2 mb-2">
+          <span class="text-3xl font-bold">62.50%</span>
+          <span class="text-green-400 text-sm mb-1">↑ 5.25%</span>
+        </div>
+        <p class="text-gray-400 text-sm">8 scanned, 5 auto-processed</p>
+        <div class="w-full bg-neutral-700 rounded-full h-2 mt-4">
+          <div class="bg-[#5B53FD] h-2 rounded-full" style="width: 62.50%"></div>
+        </div>
+      </div>
+
+      <!-- User Management -->
+      <div class="bg-neutral-800 p-6 rounded-xl transition-all duration-300 animate__animated animate__fadeInUp transform hover:scale-105" style="animation-delay: 0.2s;">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 bg-[#5B53FD]/20 rounded-lg flex items-center justify-center">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/user-helmet-safety-sharp-solid.svg" alt="Users" class="w-6 h-6 transition-opacity duration-300 opacity-100 [filter:invert(1)]" loading="lazy">
+          </div>
+          <span class="text-[#5B53FD] text-sm">Active Now</span>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">User Utilization</h4>
+        <div class="flex items-end gap-2 mb-2">
+          <span class="text-3xl font-bold">1/10</span>
+          <span class="text-yellow-400 text-sm mb-1">Active Users</span>
+        </div>
+        <p class="text-gray-400 text-sm">10% utilization rate</p>
+        <div class="w-full bg-neutral-700 rounded-full h-2 mt-4">
+          <div class="bg-[#5B53FD] h-2 rounded-full" style="width: 10%"></div>
+        </div>
+      </div>
+
+      <!-- Storage Usage -->
+      <div class="bg-neutral-800 p-6 rounded-xl transition-all duration-300 animate__animated animate__fadeInUp transform hover:scale-105" style="animation-delay: 0.4s;">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 bg-[#5B53FD]/20 rounded-lg flex items-center justify-center">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/magnifying-glass_search.svg" alt="Storage" class="w-6 h-6 transition-opacity duration-300 opacity-100 [filter:invert(1)]" loading="lazy">
+          </div>
+          <span class="text-[#5B53FD] text-sm">Storage</span>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Storage Usage</h4>
+        <div class="flex items-end gap-2 mb-2">
+          <span class="text-3xl font-bold">2/8</span>
+          <span class="text-green-400 text-sm mb-1">GB Used</span>
+        </div>
+        <p class="text-gray-400 text-sm">25% storage utilized</p>
+        <div class="w-full bg-neutral-700 rounded-full h-2 mt-4">
+          <div class="bg-[#5B53FD] h-2 rounded-full" style="width: 25%"></div>
+        </div>
+      </div>
+
+      <!-- Document Quota -->
+      <div class="bg-neutral-800 p-6 rounded-xl transition-all duration-300 animate__animated animate__fadeInUp transform hover:scale-105" style="animation-delay: 0.6s;">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 bg-[#5B53FD]/20 rounded-lg flex items-center justify-center">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/enquiries.svg" alt="Quota" class="w-6 h-6 transition-opacity duration-300 opacity-100 [filter:invert(1)]" loading="lazy">
+          </div>
+          <span class="text-[#5B53FD] text-sm">Quota</span>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Document Quota</h4>
+        <div class="flex items-end gap-2 mb-2">
+          <span class="text-3xl font-bold">8/100</span>
+          <span class="text-[#5B53FD] text-sm mb-1">Scanned</span>
+        </div>
+        <p class="text-gray-400 text-sm">8% quota utilized</p>
+        <div class="w-full bg-neutral-700 rounded-full h-2 mt-4">
+          <div class="bg-[#5B53FD] h-2 rounded-full" style="width: 8%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></element><element id="f9480a0b-f56d-4d2f-b9c5-5f3cee442d31" data-section-id="f9480a0b-f56d-4d2f-b9c5-5f3cee442d31">
+
+<section id="dashboard-preview" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-te41avs8">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-crlnvulk">
+      <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4" id="el-c6yclrug">Powerful Dashboard Insights</h2>
+      <p class="text-lg text-neutral-600 max-w-2xl mx-auto" id="el-sd4g5r66">Get a complete overview of your business with real-time analytics and activity tracking</p>
+    </div>
+
+    <!-- Dashboard Preview -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="el-0j62ji73">
+      <!-- Left: Dashboard Image -->
+      <div class="relative animate__animated animate__fadeInLeft" id="el-les852zp">
+        <div class="rounded-xl overflow-hidden shadow-2xl" id="el-ehourlze">
+          <img src="https://dms.mydukaan.io/original/webp/media/cc2910dc-d4bc-46e4-9eae-93bf0c905fe6.png" alt="Dashboard Preview" class="w-full transition-opacity duration-300 opacity-100 element-highlight" loading="lazy" id="el-2zw237wk" srcset="https://dms.mydukaan.io/original/webp/media/cc2910dc-d4bc-46e4-9eae-93bf0c905fe6.png 1x,
+            https://dms.mydukaan.io/original/webp/media/cc2910dc-d4bc-46e4-9eae-93bf0c905fe6.png 2x" sizes="(max-width: 768px) 100vw,
+           (max-width: 1024px) 90vw,
+           80vw">
+        </div>
+        <div class="absolute -z-10 inset-0 bg-purple-500/20 blur-3xl" id="el-65senybr"></div>
+      </div>
+
+      <!-- Right: Activity Feed -->
+      <div class="space-y-8 animate__animated animate__fadeInRight" id="el-bo76i3xi">
+        <h3 class="text-2xl font-bold text-neutral-900 mb-6" id="el-3jg8kpln">Recent Activities</h3>
+        
+        <!-- Activity Items -->
+        <div class="space-y-6" id="el-4r78qf9e">
+  <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200 hover:shadow-md transition-all">
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+        <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/estimates.svg" alt="Document" class="w-6 h-6 transition-opacity duration-300 opacity-100 element-highlight" style="filter: invert(35%) sepia(93%) saturate(1630%) hue-rotate(233deg) brightness(99%) contrast(94%);" loading="lazy">
+      </div>
+      <div>
+        <p class="font-medium text-neutral-900">New invoice uploaded</p>
+        <p class="text-sm text-neutral-500">1h ago</p>
+      </div>
+      <span class="ml-auto text-green-500 text-sm">Processed</span>
+    </div>
+  </div>
+
+  <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200 hover:shadow-md transition-all">
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+        <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/quoting%20-%20dollar.svg" alt="Payment" class="w-6 h-6 transition-opacity duration-300 opacity-100 element-highlight" style="filter: invert(35%) sepia(93%) saturate(1410%) hue-rotate(231deg) brightness(99%) contrast(94%);" loading="lazy">
+      </div>
+      <div>
+        <p class="font-medium text-neutral-900">Payment received</p>
+        <p class="text-sm text-neutral-500">2h ago</p>
+      </div>
+      <span class="ml-auto text-[#5B53FD] text-sm">$1,250.00</span>
+    </div>
+  </div>
+
+  <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200 hover:shadow-md transition-all">
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+        <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/timesheet_job%20tracking.svg" alt="Report" class="w-6 h-6 transition-opacity duration-300 opacity-100 element-highlight" style="filter: invert(35%) sepia(93%) saturate(1410%) hue-rotate(232deg) brightness(99%) contrast(97%);" loading="lazy">
+      </div>
+      <div>
+        <p class="font-medium text-neutral-900">Monthly report generated</p>
+        <p class="text-sm text-neutral-500">5h ago</p>
+      </div>
+      <span class="ml-auto text-neutral-500 text-sm">View</span>
+    </div>
+  </div>
+</div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 gap-4 mt-8" id="el-rnp4fewq">
+          <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200" id="el-mj1d3du9">
+            <h4 class="text-sm text-neutral-500 mb-2" id="el-g3zmsz12">Success Rate</h4>
+            <p class="text-2xl font-bold text-[#5B53FD]" id="el-r03e5het">98.5%</p>
+          </div>
+          <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200" id="el-bgrfiu8p">
+            <h4 class="text-sm text-neutral-500 mb-2" id="el-6g5lamj9">Processing Time</h4>
+            <p class="text-2xl font-bold text-[#5B53FD]" id="el-gkqgo70k">2.5s</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></element><element id="1b3949b5-0613-4339-aa91-5899d2bb1db9" data-section-id="1b3949b5-0613-4339-aa91-5899d2bb1db9">
+
+<section id="benefits" class="py-20 bg-neutral-900 text-white element-highlight">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Akounto?</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">Transform your financial management with our powerful and flexible accounting tools</p>
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Left Column -->
+      <div class="space-y-8">
+        <!-- Benefit Card 1 -->
+        <div class="flex gap-6 p-6 bg-neutral-800 rounded-xl hover:bg-[#5B53FD]/10 transition-all duration-300 animate__animated animate__fadeInLeft">
+          <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/timesheet_job%20tracking.svg" alt="Real-time" class="w-12 h-12 [filter:brightness(0)_invert(1)] transition-opacity duration-300 opacity-100" loading="lazy">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Real-Time Activity Tracking</h3>
+            <p class="text-gray-400">Monitor document processing, user activities, and system performance in real-time with detailed insights for better decision making.</p>
+          </div>
+        </div>
+
+        <!-- Benefit Card 2 -->
+        <div class="flex gap-6 p-6 bg-neutral-800 rounded-xl hover:bg-[#5B53FD]/10 transition-all duration-300 animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
+          <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/user-helmet-safety-sharp-solid.svg" alt="Management" class="w-12 h-12 [filter:brightness(0)_invert(1)] transition-opacity duration-300 opacity-100" loading="lazy">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Customer &amp; Vendor Management</h3>
+            <p class="text-gray-400">Centralized platform to efficiently manage all your business relationships, communications, and transactions in one place.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-8">
+        <!-- Benefit Card 3 -->
+        <div class="flex gap-6 p-6 bg-neutral-800 rounded-xl hover:bg-[#5B53FD]/10 transition-all duration-300 animate__animated animate__fadeInRight">
+          <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/estimates.svg" alt="Reports" class="w-12 h-12 [filter:brightness(0)_invert(1)] transition-opacity duration-300 opacity-100" loading="lazy">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Advanced Report Generation</h3>
+            <p class="text-gray-400">Generate comprehensive financial reports with customizable templates and gain instant insights into your business performance.</p>
+          </div>
+        </div>
+
+        <!-- Benefit Card 4 -->
+        <div class="flex gap-6 p-6 bg-neutral-800 rounded-xl hover:bg-[#5B53FD]/10 transition-all duration-300 animate__animated animate__fadeInRight" style="animation-delay: 0.2s;">
+          <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/Scheduling.svg" alt="Resource" class="w-12 h-12 [filter:brightness(0)_invert(1)] transition-opacity duration-300 opacity-100" loading="lazy">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Streamlined Resource Management</h3>
+            <p class="text-gray-400">Easily manage user access, storage allocation, and document processing quotas with our intuitive resource management system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></element><element id="160f09ed-cdce-4156-b72c-7a58690277ef" data-section-id="160f09ed-cdce-4156-b72c-7a58690277ef">
+
+<section id="testimonials" class="py-20 bg-white element-highlight">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-d4lb3m6i">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-xbopfxj2">
+      <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4" id="el-plqf4pab">Trusted by Businesses Worldwide</h2>
+      <p class="text-lg text-neutral-600 max-w-2xl mx-auto" id="el-kkw1c49r">See what our customers are saying about their experience with Akounto</p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-3 gap-8 element-highlight" id="el-mbpf58yu">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-200" id="el-7yl9rb77">
+        <div class="flex items-center mb-6" id="el-rtfl3mkq">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mike Renwick" class="w-12 h-12 rounded-full object-cover transition-opacity duration-300 opacity-100" loading="lazy" id="el-5u6u7g4q">
+          <div class="ml-4" id="el-ylxku37a">
+            <h4 class="font-bold text-neutral-900" id="el-a3efig07">Mike Renwick</h4>
+            <p class="text-neutral-600" id="el-34jxnjum">Scoreboard Enterprises</p>
+          </div>
+        </div>
+        <p class="text-neutral-700 mb-6" id="el-6x4bmdgm">"We found it to be the most robust piece of software that was super easy to install and train our employees. We got up and running on the first day!"</p>
+        <div class="flex text-[#5B53FD]" id="el-cyiombvt">★★★★★</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-200" id="el-fiknvw9w">
+        <div class="flex items-center mb-6" id="el-1ttn2csy">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Gennady Tsakh" class="w-12 h-12 rounded-full object-cover transition-opacity duration-300 opacity-100" loading="lazy" id="el-znzmro09">
+          <div class="ml-4" id="el-zg42xvn5">
+            <h4 class="font-bold text-neutral-900" id="el-b9x2lu6c">Gennady Tsakh</h4>
+            <p class="text-neutral-600" id="el-lr4f5lh1">HVAC Absolute Mechanical</p>
+          </div>
+        </div>
+        <p class="text-neutral-700 mb-6" id="el-8x81qewv">"I opened Akounto, and right away I thought, 'This is perfect!' The automated document processing has saved us countless hours."</p>
+        <div class="flex text-[#5B53FD]" id="el-u78ixnhs">★★★★★</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-200" id="el-fz2mx409">
+        <div class="flex items-center mb-6" id="el-8h3rwgii">
+          <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Josh Bice" class="w-12 h-12 rounded-full object-cover transition-opacity duration-300 opacity-100" loading="lazy" id="el-64qs5b9v">
+          <div class="ml-4" id="el-mzj7kjel">
+            <h4 class="font-bold text-neutral-900" id="el-jncrrh0t">Josh Bice</h4>
+            <p class="text-neutral-600" id="el-iywfr2hc">Rapid Fire Protection</p>
+          </div>
+        </div>
+        <p class="text-neutral-700 mb-6" id="el-ebijmhq8">"We've been pleased with our growth so far. Akounto has been a huge part of that, streamlining our financial operations."</p>
+        <div class="flex text-[#5B53FD]" id="el-l1p0u4v8">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section></element><element id="ec2c5ec2-bc70-4635-ab27-d40eadd56147" data-section-id="ec2c5ec2-bc70-4635-ab27-d40eadd56147">
+
+<section id="pricing" class="py-20 bg-neutral-900 text-white element-highlight">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">Choose the perfect plan for your business needs</p>
+    </div>
+
+    <!-- Pricing Toggle -->
+    <div class="flex justify-center items-center mb-12">
+      <span class="text-gray-400">Monthly</span>
+      <label class="mx-4 relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" id="pricing-toggle" class="sr-only peer">
+        <div class="w-14 h-7 bg-[#5B53FD] peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all"></div>
+      </label>
+      <span class="text-gray-400">Annual <span class="text-[#5B53FD]">(Save 20%)</span></span>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Starter Plan -->
+      <div class="bg-neutral-800 rounded-xl p-8 hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp">
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-bold mb-4">Starter</h3>
+          <div class="pricing-amount">
+            <span class="text-4xl font-bold">$29.99</span>
+            <span class="text-gray-400">/month</span>
+          </div>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>Up to 100 documents</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>5 team members</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>QuickBooks sync</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>Invoice &amp; receipt extraction</span>
+          </li>
+        </ul>
+        <button class="w-full py-3 px-6 rounded-lg border border-[#5B53FD] text-[#5B53FD] hover:bg-[#5B53FD] hover:text-white transition-all duration-300">Start Free Trial</button>
+      </div>
+
+      <!-- Basic Plan -->
+      <div class="bg-[#5B53FD] rounded-xl p-8 hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+        <div class="absolute -top-4 right-4">
+          <span class="bg-green-500 text-white px-4 py-1 rounded-full text-sm">Popular</span>
+        </div>
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-bold mb-4">Basic</h3>
+          <div class="pricing-amount">
+            <span class="text-4xl font-bold">$59.99</span>
+            <span class="text-gray-200">/month</span>
+          </div>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>Up to 200 documents</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>10 team members</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>QuickBooks sync</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>Auto matching</span>
+          </li>
+        </ul>
+        <button class="w-full py-3 px-6 rounded-lg bg-white text-[#5B53FD] hover:bg-neutral-100 transition-all duration-300">Start Free Trial</button>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="bg-neutral-800 rounded-xl p-8 hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-bold mb-4">Pro</h3>
+          <div class="pricing-amount">
+            <span class="text-4xl font-bold">$99.99</span>
+            <span class="text-gray-400">/month</span>
+          </div>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>Up to 500 documents</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>15 team members</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>Advanced integrations</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-5 h-5 brightness-0 invert transition-opacity duration-300 opacity-100" alt="check" loading="lazy">
+            <span>Priority support</span>
+          </li>
+        </ul>
+        <button class="w-full py-3 px-6 rounded-lg border border-[#5B53FD] text-[#5B53FD] hover:bg-[#5B53FD] hover:text-white transition-all duration-300">Start Free Trial</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const pricingToggle = document.getElementById('pricing-toggle');
+    const amounts = document.querySelectorAll('.pricing-amount');
+    const monthlyPrices = ['$29.99', '$59.99', '$99.99'];
+    const annualPrices = ['$23.99', '$47.99', '$79.99'];
+
+    pricingToggle.addEventListener('change', function() {
+      amounts.forEach((amount, index) => {
+        const priceSpan = amount.querySelector('span:first-child');
+        if (priceSpan) {
+          priceSpan.textContent = this.checked ? annualPrices[index] : monthlyPrices[index];
+        }
+      });
+    });
+  </script>
+</section></element><element id="de8cffbe-44c4-4b23-ba48-bd1455eaf8e4" data-section-id="de8cffbe-44c4-4b23-ba48-bd1455eaf8e4">
+
+<section id="cta" class="py-20 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 bg-purple-500/10 blur-3xl -z-10" id="el-o5vxojpf"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" id="el-2k6isg3c">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="el-d8036114">
+      <!-- Left Content -->
+      <div class="animate__animated animate__fadeInLeft" id="el-xt644a2s">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6" id="el-9lmjsm4p">Ready to Transform Your Financial Management?</h2>
+        <p class="text-lg text-neutral-600 mb-8" id="el-3763vgf4">Join thousands of businesses already using Akounto to streamline their financial operations. Start your 14-day free trial today.</p>
+        
+        <div class="space-y-6 mb-8 element-highlight" id="el-fquotyc6">
+  <div class="flex items-center gap-3" id="el-1l0v8yx3">
+    <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-6 h-6 [filter:brightness(0)] transition-opacity duration-300 opacity-100" alt="check" loading="lazy" id="el-dd4kkodi">
+    <span class="text-neutral-700" id="el-zgp84d7k">No credit card required</span>
+  </div>
+  <div class="flex items-center gap-3" id="el-5vmq97yi">
+    <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-6 h-6 [filter:brightness(0)] transition-opacity duration-300 opacity-100" alt="check" loading="lazy" id="el-kl4kzdnh">
+    <span class="text-neutral-700" id="el-bo6xl7lj">Full access to all features</span>
+  </div>
+  <div class="flex items-center gap-3" id="el-vkkosft3">
+    <img src="https://www.tradifyhq.com/hubfs/Website%202024/icons/Icons%202024%20-%20Tradify%20SVG/fire-flame-simple-sharp-solid.svg" class="w-6 h-6 [filter:brightness(0)] transition-opacity duration-300 opacity-100" alt="check" loading="lazy" id="el-uayus0ec">
+    <span class="text-neutral-700" id="el-psn4iuaw">Free onboarding support</span>
+  </div>
+</div>
+
+        <!-- Integration Logos -->
+        
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative animate__animated animate__fadeInRight" id="el-1xjw0php">
+        <img src="https://www.tradifyhq.com/hs-fs/hubfs/Free%20trial%20cta%20image.png" alt="Dashboard Preview" class="w-full rounded-xl shadow-2xl transition-opacity duration-300 opacity-100" loading="lazy" id="el-w2pg74p0">
+        <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg" id="el-hg6ly88m">
+          <div class="flex items-center gap-4" id="el-lleby25a">
+            <img src="https://dms.mydukaan.io/original/webp/media/f7e2f9be-02aa-4b58-bea2-b01212755db9.svg" alt="Logo" class="w-12 h-12 transition-opacity duration-300 opacity-100 element-highlight" loading="lazy" id="el-kawg2kgh">
+            <div id="el-lm5br4uj">
+              <h4 class="font-semibold text-neutral-900" id="el-kn52lacu">Start your journey today</h4>
+              <p class="text-neutral-600" id="el-sbmrz73m">Join 10,000+ satisfied customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></element><element id="6224bf42-47ea-4680-9f79-67a0bcdcca26" data-section-id="6224bf42-47ea-4680-9f79-67a0bcdcca26">
+
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white pt-20 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-neutral-800">
+        <!-- Company Info -->
+        <div class="lg:col-span-2">
+          <img src="https://dms.mydukaan.io/original/webp/media/bc3d6fea-c943-4aac-bcac-82641be3a021.svg" alt="Logo" class="h-8 mb-6 transition-opacity duration-300 opacity-100" loading="lazy">
+          <p class="text-gray-400 mb-6">Streamline your financial operations with our comprehensive management platform. Automate processes, gain insights, and grow your business.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-[#5B53FD] hover:text-[#5B53FD]">
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+            </a>
+            <a href="#" class="text-[#5B53FD] hover:text-[#5B53FD]">
+              <span class="sr-only">LinkedIn</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Product</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Features</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Pricing</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Security</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Integrations</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Resources</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Documentation</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Help Center</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">API</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Company</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">About</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Careers</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Contact</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-[#5B53FD] transition-colors">Partners</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-wrap justify-center md:justify-start gap-6 mb-4 md:mb-0">
+          <a href="#" class="text-sm text-gray-400 hover:text-[#5B53FD]">Terms of Service</a>
+          <a href="#" class="text-sm text-gray-400 hover:text-[#5B53FD]">Privacy Policy</a>
+          <a href="#" class="text-sm text-gray-400 hover:text-[#5B53FD]">Cookie Policy</a>
+        </div>
+        <p class="text-sm text-gray-400">© 2024 Akounto. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          

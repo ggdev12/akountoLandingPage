@@ -1,190 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms & Conditions - Kounto AI</title>
+    <!-- Core CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f8f8f8",
+                100: "#e8e8e8",
+                200: "#d3d3d3",
+                300: "#a3a3a3",
+                400: "#737373",
+                500: "#525252",
+                600: "#404040",
+                700: "#262626",
+                800: "#171717",
+                900: "#0a0a0a",
+                950: "#030303",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #f3f4f6;
-            min-height: 100vh;
-            background: linear-gradient(to bottom right, #363199, #05000f);
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #f3f4f6;
+        min-height: 100vh;
+        background: linear-gradient(to bottom right, #363199, #05000f);
+      }
 
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+
+      .content {
+        background-color: rgba(31, 41, 55, 0.5);
+        border-radius: 0.5rem;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      .section:last-child {
+        margin-bottom: 0;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #e5e7eb;
+      }
+
+      .subsection {
+        margin-bottom: 1.5rem;
+      }
+
+      .subsection-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+        color: #e5e7eb;
+      }
+
+      .text {
+        color: #d1d5db;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style-position: inside;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        color: #d1d5db;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Navbar Styles */
+      .gradient-text {
+        background: linear-gradient(45deg, #5b53fd, #9f7aea);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .footer {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(209, 213, 219, 0.2);
+        text-align: center;
+        font-size: 0.875rem;
+        color: #9ca3af;
+      }
+
+      @media (max-width: 768px) {
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 3rem 1rem;
+          padding: 2rem 1rem;
         }
 
         .title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 2rem;
+          font-size: 2rem;
         }
 
         .content {
-            background-color: rgba(31, 41, 55, 0.5);
-            border-radius: 0.5rem;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        .section:last-child {
-            margin-bottom: 0;
+          padding: 1.5rem;
         }
 
         .section-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #e5e7eb;
-        }
-
-        .subsection {
-            margin-bottom: 1.5rem;
+          font-size: 1.25rem;
         }
 
         .subsection-title {
-            font-size: 1.25rem;
-            font-weight: 500;
-            margin-bottom: 0.75rem;
-            color: #e5e7eb;
+          font-size: 1.125rem;
         }
-
-        .text {
-            color: #d1d5db;
-            margin-bottom: 1rem;
-        }
-
-        ul {
-            list-style-position: inside;
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        li {
-            color: #d1d5db;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(209, 213, 219, 0.2);
-            text-align: center;
-            font-size: 0.875rem;
-            color: #9ca3af;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            .title {
-                font-size: 2rem;
-            }
-
-            .content {
-                padding: 1.5rem;
-            }
-
-            .section-title {
-                font-size: 1.25rem;
-            }
-
-            .subsection-title {
-                font-size: 1.125rem;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1 class="title">Terms & Conditions</h1>
-        
-        <div class="content">
-            <section class="section">
-                <h2 class="section-title">Site Covered</h2>
-                <p class="text">https://kounto.ai/</p>
-            </section>
-
-            <section class="section">
-                <p class="text">
-                    The End User service Agreement promising a bond agreement with Kounto.AI
-                    (hereinafter called 'Kounto AI') and with its all clients/customers.
-                    Before going to click on the "I Accept" button or just to create a new
-                    account, make sure you read about all terms & conditions to get access
-                    to all services.
-                </p>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Definitions and General Agreement Terms</h2>
-                <div class="subsection">
-                    <h3 class="subsection-title">1. Definitions</h3>
-                    <ul>
-                        <li><strong>Company, Us, We:</strong> "Kounto AI," as the creator,
-                            operator, and publisher of this Website.</li>
-                        <li><strong>You, the User, the Client:</strong> Any individual
-                            accessing or using the Website.</li>
-                        <li><strong>Parties:</strong> Collectively refers to both the
-                            Company and You.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Website Usage and Service Terms</h2>
-                <div class="subsection">
-                    <h3 class="subsection-title">1. Duration of License to the Services</h3>
-                    <p class="text">
-                        This Agreement becomes effective either upon your acknowledgment or upon your first
-                        access or use of the Services and remains in effect until terminated as per the
-                        terms herein. Kounto AI reserves the right to terminate this Agreement at any time,
-                        with or without cause.
-                    </p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Third-Party Links, Content, and Services</h2>
-                <p class="text">
-                    The Company and its affiliated entity, Kounto AI, may occasionally post links to
-                    third-party websites or embed access to third-party services, including but not limited
-                    to payment applications and software like QuickBooks.
-                </p>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Governing Law</h2>
-                <p class="text">
-                    This Agreement and any related claims shall be governed by the laws of the United States,
-                    without regard to conflict-of-law principles. Jurisdiction and venue for disputes shall
-                    be confined to the courts within the Company's principal place of operation.
-                </p>
-            </section>
-
-            <div class="footer">
-                KOUNTO AI RESERVES THE RIGHT TO MAKE CHANGES TO TERMS AND CONDITIONS OR AMEND THE USE/
-                IMPLEMENTATION OF THE PRIVACY POLICY AND TERMS AND CONDITIONS ITSELF AT ANY TIME WITHOUT
-                NOTIFYING ANY PARTY OR INDIVIDUAL WHATSOEVER.
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="bg-gradient-to-b from-neutral-900/100 to-neutral-900/80 backdrop-blur-md border border-white/10 border-b-2 border-b-[#5B53FD] text-white fixed w-full z-50 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <!-- Logo -->
+          <a href="/index.html" class="flex-shrink-0 flex items-center">
+            <div class="flex items-center justify-end gap-2">
+              <img
+                class="h-8 w-auto transition-opacity duration-300 opacity-100"
+                src="https://dms.mydukaan.io/original/webp/media/79927748-92f3-4505-9bd0-9dc14b81b700.png"
+                alt="Logo"
+                loading="lazy"
+              />
+              <span
+                class="gradient-text font-bold text-xl md:text-2xl lg:text-3xl"
+                style="
+                  display: inline-flex;
+                  align-items: baseline;
+                  line-height: 2;
+                "
+                >Kounto AI</span
+              >
             </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-center space-x-8">
+              <a
+                href="/#features"
+                class="text-white/90 hover:text-white px-3 py-2 text-sm font-medium scroll-smooth transition-colors duration-300"
+                >Features</a
+              >
+              <a
+                href="/#dashboard-preview"
+                class="text-white/90 hover:text-white px-3 py-2 text-sm font-medium scroll-smooth transition-colors duration-300"
+                >Dashboard</a
+              >
+              <a
+                href="/#benefits"
+                class="text-white/90 hover:text-white px-3 py-2 text-sm font-medium scroll-smooth transition-colors duration-300"
+                >Benefits</a
+              >
+              <a
+                href="/#pricing"
+                class="text-white/90 hover:text-white px-3 py-2 text-sm font-medium scroll-smooth transition-colors duration-300"
+                >Pricing</a
+              >
+              <a
+                href="https://app.kounto.ai/"
+                class="bg-gradient-to-r from-[#5B53FD] to-[#9F7AEA] hover:opacity-90 px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 shadow-[0_5px_15px_rgba(91,83,253,0.4)]"
+                >Get Started</a
+              >
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md hover:bg-white/10 transition-colors duration-300"
+            >
+              <svg
+                class="h-6 w-6 text-white"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  class="mobile-menu-icon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gradient-to-b from-neutral-900/30 to-neutral-900/40 backdrop-blur-md border-t border-white/10"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="/#features"
+            class="block px-3 py-2 text-base font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+            >Features</a
+          >
+          <a
+            href="/#dashboard-preview"
+            class="block px-3 py-2 text-base font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+            >Dashboard</a
+          >
+          <a
+            href="/#benefits"
+            class="block px-3 py-2 text-base font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+            >Benefits</a
+          >
+          <a
+            href="/#pricing"
+            class="block px-3 py-2 text-base font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+            >Pricing</a
+          >
+          <a
+            href="https://app.kounto.ai/"
+            class="block text-left bg-gradient-to-r from-[#5B53FD] to-[#9F7AEA] hover:opacity-90 px-3 py-2 rounded-lg text-base font-medium text-white transition-all duration-300 shadow-[0_5px_15px_rgba(91,83,253,0.4)]"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container pt-20">
+      <h1 class="title">Terms & Conditions</h1>
+
+      <div class="content">
+        <section class="section">
+          <h2 class="section-title">Site Covered</h2>
+          <p class="text">https://kounto.ai/</p>
+        </section>
+
+        <section class="section">
+          <p class="text">
+            The End User service Agreement promising a bond agreement with
+            Kounto.AI (hereinafter called 'Kounto AI') and with its all
+            clients/customers. Before going to click on the "I Accept" button or
+            just to create a new account, make sure you read about all terms &
+            conditions to get access to all services.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Definitions and General Agreement Terms</h2>
+          <div class="subsection">
+            <h3 class="subsection-title">1. Definitions</h3>
+            <ul>
+              <li>
+                <strong>Company, Us, We:</strong> "Kounto AI," as the creator,
+                operator, and publisher of this Website.
+              </li>
+              <li>
+                <strong>You, the User, the Client:</strong> Any individual
+                accessing or using the Website.
+              </li>
+              <li>
+                <strong>Parties:</strong> Collectively refers to both the
+                Company and You.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Website Usage and Service Terms</h2>
+          <div class="subsection">
+            <h3 class="subsection-title">
+              1. Duration of License to the Services
+            </h3>
+            <p class="text">
+              This Agreement becomes effective either upon your acknowledgment
+              or upon your first access or use of the Services and remains in
+              effect until terminated as per the terms herein. Kounto AI
+              reserves the right to terminate this Agreement at any time, with
+              or without cause.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">
+            Third-Party Links, Content, and Services
+          </h2>
+          <p class="text">
+            The Company and its affiliated entity, Kounto AI, may occasionally
+            post links to third-party websites or embed access to third-party
+            services, including but not limited to payment applications and
+            software like QuickBooks.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Governing Law</h2>
+          <p class="text">
+            This Agreement and any related claims shall be governed by the laws
+            of the United States, without regard to conflict-of-law principles.
+            Jurisdiction and venue for disputes shall be confined to the courts
+            within the Company's principal place of operation.
+          </p>
+        </section>
+
+        <div class="footer">
+          KOUNTO AI RESERVES THE RIGHT TO MAKE CHANGES TO TERMS AND CONDITIONS
+          OR AMEND THE USE/ IMPLEMENTATION OF THE PRIVACY POLICY AND TERMS AND
+          CONDITIONS ITSELF AT ANY TIME WITHOUT NOTIFYING ANY PARTY OR
+          INDIVIDUAL WHATSOEVER.
+        </div>
+      </div>
     </div>
-</body>
+    <!-- Footer Component to add to both pages -->
+    <div class=" pt-20">
+      <footer id="footer" class="bg-neutral-900 text-white pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-neutral-800"
+          >
+            <!-- Company Info -->
+            <div class="lg:col-span-2">
+              <div class="flex items-center justify-start gap-2">
+                <img
+                  class="h-8 w-auto transition-opacity duration-300 opacity-100"
+                  src="https://dms.mydukaan.io/original/webp/media/79927748-92f3-4505-9bd0-9dc14b81b700.png"
+                  alt="Logo"
+                  loading="lazy"
+                />
+                <span
+                  class="gradient-text font-bold text-xl md:text-2xl lg:text-3xl"
+                  style="
+                    display: inline-flex;
+                    align-items: baseline;
+                    line-height: 2;
+                  "
+                  >Kounto AI</span
+                >
+              </div>
+              <p class="text-gray-400 mb-6">
+                Streamline your financial operations with our comprehensive
+                management platform. Automate processes, gain insights, and grow
+                your business.
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-[#5B53FD] hover:text-[#5B53FD]">
+                  <span class="sr-only">Twitter</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="text-[#5B53FD] hover:text-[#5B53FD]">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Product</h3>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="/#features"
+                    class="text-gray-400 hover:text-[#5B53FD] transition-colors"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/#dashboard-preview"
+                    class="text-gray-400 hover:text-[#5B53FD] transition-colors"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/#benefits"
+                    class="text-gray-400 hover:text-[#5B53FD] transition-colors"
+                    >Benefits</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/#pricing"
+                    class="text-gray-400 hover:text-[#5B53FD] transition-colors"
+                    >Pricing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Resources</h3>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="/terms-conditions.html"
+                    class="text-gray-400 hover:text-[#5B53FD] transition-colors"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/privacy-policy.html"
+                    class="text-gray-400 hover:text-[#5B53FD] transition-colors"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bottom Section -->
+          <div
+            class="pt-8 flex flex-col md:flex-row justify-between items-center"
+          >
+            <div
+              class="flex flex-wrap justify-center md:justify-start gap-6 mb-4 md:mb-0"
+            >
+              <a
+                href="/terms-conditions.html"
+                class="text-sm text-gray-400 hover:text-[#5B53FD]"
+                >Terms of Service</a
+              >
+              <a
+                href="/privacy-policy.html"
+                class="text-sm text-gray-400 hover:text-[#5B53FD]"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-sm text-gray-400 hover:text-[#5B53FD]"
+                >Cookie Policy</a
+              >
+            </div>
+            <p class="text-sm text-gray-400">
+              © 2024 Kounto. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Mobile menu functionality
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+
+        if (
+          !mobileMenuButton.contains(event.target) &&
+          !mobileMenu.contains(event.target)
+        ) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
 </html>
